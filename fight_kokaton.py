@@ -171,7 +171,7 @@ def main():
                 if beam.rct.colliderect(bomb.rct):  #衝突判定
                     beam = None
                     bomb = None  #爆弾ビーム消す
-                    bird.change_img(6, screen)
+                    bird.change_img(6, screen)  # 喜びエフェクト
 
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
