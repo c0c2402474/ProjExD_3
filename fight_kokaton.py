@@ -209,7 +209,7 @@ def main():
         # if bomb is not None: 
         for bomb in bombs:
             bomb.update(screen)
-        score.update(screen = screen)
+        score.update(screen = screen)  # scoreクラスのupdateを呼び出してスコアを表示
         pg.display.update()
         tmr += 1
         clock.tick(50)
